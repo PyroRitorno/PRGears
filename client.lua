@@ -2,6 +2,9 @@
 
 
 local engineupmulti = 1.05
+local incLin = 0.200
+local incExp = 1.125
+local incGear = 1.50
 
 
 
@@ -84,9 +87,6 @@ local function SimulateGears()
         local ratio
 
         -- ratio = Config.gears[numgears][selectedgear] * (1/0.9)
-        local incLin = 0.200
-        local incExp = 1.125
-        local incGear = 1.50
         ratio = ( ((numgears - selectedgear) * incLin) + math.pow(math.pow(incExp, numgears - selectedgear), math.pow((6 / numgears), incGear)) )
         if selectedgear == 1 and numgears > 1 then
             ratio = ratio + 1.2

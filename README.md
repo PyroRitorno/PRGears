@@ -1,20 +1,22 @@
-# Fivem HRSGears (manual gearbox)
+# CFX/FiveM: PRGears (fork of [HugoSimoes12345/HRSGears](https://github.com/HugoSimoes12345/HRSGears) manual gearbox)
+To install, download and import this repository to your `resources` folder,
+then add `ensure PRGears` to your `server.cfg`.
 
-Please read the config file
+This resource depends on [PRKeybinds](https://github.com/PyroRitorno/PRKeybinds) to handle the gearbox controls.
 
-the last gear allways need to be 0.90!!!!!
-gear ratios from 1 to 6 gears vehicle are native GTA V gear ratios and i create the other
-in config.lua in config.vehicles you can add more gear ratios for specified vehicles 
-gear up = shift / controller A , gear down = r / controller B 
-Lscustom transmission upgrade adds another Gear to the vehicle
+It also uses [ESX](https://github.com/esx-framework) for notifications, but those can be removed from the resource manifest and client script.
 
-to install this on your server just drag and drop the resource inside your resource folder and start it on your server config, it would be cool if you keep the resource name as HRSGears.
+This fork calculates gear ratios using some random formula that I made with pre-defined variables and certain vehicle properties.
+It uses the vehicle's engine upgrade level and number of gears (transmission upgrades add 1 gear).
 
-Please don't sell my resource.
+I'm certain there will be incompatibilities with certain cars/tunings, so feel free to edit the script however you see fit!
 
+## Original [README.md](https://github.com/HugoSimoes12345/HRSGears/blob/main/README.md)
+```
 For more information or if you want a custom resource for your server add me on discord 
 hugo.simoes.12345#4946
 
 If you want to check my Fivem Survival server enter here
 https://cfx.re/join/r5obzp
 or just search for TBWSurvival
+```
